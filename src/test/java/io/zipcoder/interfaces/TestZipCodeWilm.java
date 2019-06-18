@@ -53,7 +53,7 @@ public class TestZipCodeWilm {
         }
 
         // When
-        zcw.hostLecture(Educator.NHU, 20);
+        zcw.hostLecture(Educator.DOLIO, 20);
         Students actual = zcw.getStudents();
 
         // Then

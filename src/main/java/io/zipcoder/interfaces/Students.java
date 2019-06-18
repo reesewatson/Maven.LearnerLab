@@ -11,23 +11,23 @@ public final class Students extends People<Student> {
     private Students() {
         Student reese = new Student(2);
         reese.setName("Reese");
-        Student eleonor = new Student(4);
-        eleonor.setName("Eleonor");
-        Student robyn = new Student(6);
-        robyn.setName("Robyn");
-        Student sean = new Student(8);
-        sean.setName("Sean");
-        Student ashley = new Student(10);
-        ashley.setName("Ashley");
-        Student ajah = new Student(12);
-        ajah.setName("Ajah");
+        Student prasanthi = new Student(4);
+        prasanthi.setName("Prasanthi");
+        Student rob = new Student(6);
+        rob.setName("Rob");
+        Student alicia = new Student(8);
+        alicia.setName("Alicia");
+        Student andrew = new Student(10);
+        andrew.setName("Andrew");
+        Student dan = new Student(12);
+        dan.setName("Dan");
 
         add(reese);
-        add(eleonor);
-        add(robyn);
-        add(sean);
-        add(ashley);
-        add(ajah);
+        add(prasanthi);
+        add(rob);
+        add(alicia);
+        add(andrew);
+        add(dan);
     }
 
     @Override

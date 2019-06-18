@@ -32,7 +32,7 @@ public class TestPerson {
 
 
     @Test
-    public void personSetNameTest() {
+    public void personSetNameTest2() {
         //Given
         Person person = new Person(12345678);
         String expectedName = "Brian";
@@ -46,7 +46,7 @@ public class TestPerson {
     }
 
     @Test
-    public void personSetNameTest() {
+    public void personSetNameTest3() {
         //Given
         Person person = new Person(12345679);
         String expectedName = "Sean";

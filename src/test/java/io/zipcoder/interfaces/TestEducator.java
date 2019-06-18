@@ -11,7 +11,7 @@ import org.junit.Test;
         @Test
         public void testImplementation(){
             // Given
-            Educator educator = Educator.LEON;
+            Educator educator = Educator.KRIS;
 
             // When
             boolean actual = educator instanceof Teacher;
@@ -24,7 +24,7 @@ import org.junit.Test;
         @Test
         public void testTeach(){
             // Given
-            Educator educator = Educator.NHU;
+            Educator educator = Educator.DOLIO;
             Student student = new Student(7654321);
             double expected = 10;
 
@@ -54,7 +54,7 @@ import org.junit.Test;
         @Test
         public void testLecture(){
             // Given
-            Educator educator = Educator.WIL;
+            Educator educator = Educator.WILHEM;
             Student student1 = new Student(1);
             Student student2 = new Student(2);
             Student student3 = new Student(3);
@@ -82,7 +82,7 @@ import org.junit.Test;
         @Test
         public void testLectureEducatorTimeWorked(){
             // Given
-            Educator educator = Educator.LEON;
+            Educator educator = Educator.FROILAN;
             Student student1 = new Student(1);
             Student student2 = new Student(2);
             Student student3 = new Student(3);

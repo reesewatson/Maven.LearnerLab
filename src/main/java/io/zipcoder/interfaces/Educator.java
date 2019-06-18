@@ -1,11 +1,10 @@
 package io.zipcoder.interfaces;
 
 public enum Educator implements Teacher {
-    LEON("Leon", 1),
-    FROILAN("Froilan", 2),
-    WIL("Wil", 3),
-    NHU("Nhu", 4);
-
+    KRIS("Kris", 1),
+    DOLIO("Dolio", 2),
+    WILHEM("Wilhem", 3),
+    FROILAN("Froilan", 4);
 
     final Instructor instructor;
     double timeWorked = 0;

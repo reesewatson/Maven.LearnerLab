@@ -1,5 +1,4 @@
 package io.zipcoder.interfaces;
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -7,6 +6,7 @@ import java.util.List;
 public abstract class People<E extends Person> {
 
     protected List<E> personList;
+    protected List<Person> personList2;
 
     public People() { this.personList = new ArrayList(); }
 

@@ -20,7 +20,7 @@ public class TestPeople {
         // Given
         List<Student> expected = new ArrayList();
         Students people = Students.getInstance();
-        for(Student student : people.getPersonList()){
+        for (Student student : people.getPersonList()) {
             expected.add(student);
         }
         expected.add(anish);
@@ -36,14 +36,14 @@ public class TestPeople {
 
     @Test
     public void findById() {
-        //Given
+        // Given
         Instructors people = Instructors.getInstance();
-        Person expected = people.getPersonList().get(3);
+        Person expected = people.getPersonList().get(2);
 
-        //When
+        // When
         Person actual = people.findById((long) 3);
 
-        //Then
+        // Then
         Assert.assertEquals(expected, actual);
     }
 
@@ -103,64 +103,40 @@ public class TestPeople {
         Assert.assertTrue(actual);
     }
 
-//    @Test
-//    public void removeByIdTest() {
-//        //Given
-//        List<Person> personList = new ArrayList<Person>();
-//        Person alex = new Person(987487);
-//
-//        //When
-//        personList.add(alex);
-//        boolean actual = personList.removeById(987487);
-//
-//        //Then
-//        Assert.assertTrue(actual);
-//    }
-
-//    @Test
-//    public void getCountTest() {
-//        //Given
-//        List<Person> list = new ArrayList<Person>();
-//        Person ryane = new Person(8764764);
-//        Person ashton = new Person(3478647);
-//        Person eric = new Person(3764623);
-//        People people = new People
-//
-//        //When
-//        list.add(ryane);
-//        list.add(ashton);
-//        list.add(eric);
-//        Integer expected = 3;
-//        Integer actual = list.getCount();
-//
-//        //Then
-//        Assert.assertEquals(expected, actual);
-//    }
-
     @Test
-    public void getArray() {
-        //Given
+    public void removeById() {
+        // Given
+        List<Student> expected = new ArrayList();
+        Students people = Students.getInstance();
+        for(Student student : people.getPersonList()){
+            expected.add(student);
+        }
+        Student anish = expected.get(3);
+        expected.remove(anish);
 
-
-
-        //When
-
+        // When
+        people.removeById(4);
+        List<Student> actual = people.getPersonList();
 
         //Then
-
-
+        Assert.assertEquals(expected, actual);
+        people.add(anish);
     }
 
     @Test
-    public void removeAll() {
+    public void getCountTest() {
         //Given
-
+        List<Student> expectedlist = new ArrayList();
+        Students people = Students.getInstance();
+        for (Student student : people.getPersonList()) {
+            expectedlist.add(student);
+        }
 
         //When
-
+        Integer expected = expectedlist.size();
+        Integer actual = people.getCount();
 
         //Then
-
-
+        Assert.assertEquals(expected, actual);
     }
 }
